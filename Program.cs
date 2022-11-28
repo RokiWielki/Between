@@ -14,7 +14,15 @@ namespace Between
             Console.Write("Give number b: ");
             int b = int.Parse(Console.ReadLine());
             Console.Write("Even numbers between a and b : ");
-            Between(a, b);
+            if (a < b)
+            {
+                Between(a, b);
+            }
+            else 
+            {
+                Between(b, a);
+            }
+            
         }
         static void Between(int a,int b)
         {
